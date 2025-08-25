@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Random Number</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Random Number Generator</h1>
+    <p>Your number is:</p>
+    <p id="number"></p>
+  </body>
+  <script>
+    let randomNumber = Math.round(Math.random() * 100);
+    console.log(randomNumber);
+    document.getElementById("number").innerText = randomNumber;
+  </script>
+</html>
