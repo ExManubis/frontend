@@ -60,6 +60,20 @@ img {
   margin-bottom: 2rem;
 }
 
+input:focus {
+  outline: none;
+}
+
+input.number-to-text::-webkit-outer-spin-button,
+input.number-to-text::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"].number-to-text {
+  -moz-appearance: textfield;
+}
+
 button {
   font-size: 4rem;
   padding: 1rem 2rem;
@@ -68,5 +82,10 @@ button {
   background-color: #222;
   border: 0.4rem solid #02f731;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: #02f731;
+  color: #222;
 }
 

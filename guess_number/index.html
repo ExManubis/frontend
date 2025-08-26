@@ -15,7 +15,14 @@
       <img src="gif/win.gif" alt="winner gif" id="winGif" />
       <p id="result"></p>
       <form id="guessForm">
-        <input type="number" id="guessInput" min="1" max="100" required />
+        <input
+          type="number"
+          id="guessInput"
+          class="number-to-text"
+          min="1"
+          max="100"
+          required
+        />
         <button type="submit">Gæt</button>
       </form>
       <button id="newGame" type="button" onclick="window.location.reload();">
