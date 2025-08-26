@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "PixelFont";
+  src: url(../fonts/RasterForgeRegular.woff2);
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #222;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 6rem;
+  font-family: "PixelFont", sans-serif;
+  color: #02f731;
+}
+
+p {
+  font-family: monospace;
+  font-size: 2rem;
+  color: #02f731;
+}
+
+img {
+  width: 20rem;
+  margin-bottom: 2rem;
+}
+
+#winGif {
+  display: none;
+}
+
+#guessInput {
+  font-size: 4rem;
+  width: 10rem;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+  text-align: center;
+  font-family: "PixelFont", sans-serif;
+  color: #02f731;
+  background-color: #222;
+  border: 0.4rem solid #02f731;
+}
+
+#result {
+  font-size: 2rem;
+}
+
+#newGame {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  font-size: 4rem;
+  padding: 1rem 2rem;
+  font-family: "PixelFont", sans-serif;
+  color: #02f731;
+  background-color: #222;
+  border: 0.4rem solid #02f731;
+  cursor: pointer;
+}
+

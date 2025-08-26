@@ -7,13 +7,21 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Gæt et tal</h1>
-    <p>Gæt et tal mellem 1 og 100!</p>
-    <p id='result'></p>
-    <form id="guessForm">
-      <input type="number" id="guessInput" min="1" max="100" required />
-      <button type="submit">Gæt</button>
-    </form>
+    <main>
+      <h1>Gæt et tal</h1>
+      <p>Gæt et tal mellem 1 og 100!</p>
+      <p id="score"></p>
+      <p id="yourGuess"></p>
+      <img src="gif/win.gif" alt="winner gif" id="winGif" />
+      <p id="result"></p>
+      <form id="guessForm">
+        <input type="number" id="guessInput" min="1" max="100" required />
+        <button type="submit">Gæt</button>
+      </form>
+      <button id="newGame" type="button" onclick="window.location.reload();">
+        Nyt Spil
+      </button>
+    </main>
   </body>
-  <script src='js/numbergame.js'></script>
+  <script src="js/numbergame.js"></script>
 </html>
