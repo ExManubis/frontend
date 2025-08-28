@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="da">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Gæt et tal - Ombyttet</title>
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <h1>Gæt et tal - Ombyttet!</h1>
+            <p>Tænk på et tal mellem 1 & 100!</p>
+            <p id="score"></p>
+            <p id="myGuess"></p>
+            <img src="gif/win.gif" alt="winner gif" id="winGif" />
+            <p id="result"></p>
+            <div id="buttonRow">
+                <button id="lower" type="button">Lavere</button>
+                <button id="correct" type="button">Korrekt</button>
+                <button id="higher" type="button">Højere</button>
+            </div>
+            <button
+                id="newGame"
+                type="button"
+                onclick="window.location.reload();"
+            >
+                Nyt Spil
+            </button>
+        </main>
+    </body>
+    <script src="js/numbergame.js"></script>
+</html>
