@@ -1,0 +1,12 @@
+ul {
+    list-style: none;
+    display: inline;
+}
+
+li {
+    display: inline;
+}
+
+button {
+    margin-top: 2rem;
+}
