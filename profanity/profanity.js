@@ -11,10 +11,7 @@ function filter() {
         alert('Teksten er allerede filtreret')
     } else {
         let filterText = text.innerText
-        console.log(filterText)
-        console.log(curseWords)
         curseWords.forEach(word => {
-            console.log(word.bad)
             let newstring = filterText.replace(word.bad, `<span>${word.good}</span>`)
             filterText = newstring
             return filterText
