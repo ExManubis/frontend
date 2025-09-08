@@ -62,12 +62,14 @@ h1 {
     height: 2.75rem;
     background-color: var(--secondary_color);
     animation: blink 1s infinite;
+	animation: 
 }
 
 @keyframes blink {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
