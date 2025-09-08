@@ -40,7 +40,7 @@ p {
 }
 
 footer {
-    height: 150px;
+    height: 200px;
     margin: 1rem 10rem;
     background-color: var(--primary_color);
     color: var(--secondary_color);
@@ -58,6 +58,16 @@ h2 {
 
 footer h2 {
     text-align: center;
+}
+
+footer pre {
+    text-align: center;
+}
+
+footer pre code {
+    font-size: 1.5rem;
+    color: var(--primary_color);
+    background-color: var(--secondary_color);
 }
 
 h3 {
