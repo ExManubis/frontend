@@ -1,6 +1,6 @@
-const selector = document.getElementById('theme-switcher')
+const selector = document.getElementById('theme-switcher');
 
 selector.addEventListener('change', (e) => {
-    let theme = e.target.value
-    document.querySelector('body').dataset.theme = theme
-})
+    let theme = e.target.value;
+    document.querySelector('body').dataset.theme = theme;
+});
