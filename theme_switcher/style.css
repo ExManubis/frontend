@@ -59,10 +59,9 @@ h1 {
 
 #title .cursor {
     width: 25px;
-    height: 2.75rem;
+    height: 3rem;
     background-color: var(--secondary_color);
     animation: blink 1s infinite;
-	animation: 
 }
 
 @keyframes blink {
