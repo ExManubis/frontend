@@ -1,0 +1,114 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+	background-image: url('pc.gif');
+	background-size: 250px 250px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    height: 7.5rem;
+}
+
+main {
+	margin: 2.5rem 10rem;
+	height: 450px;
+}
+
+footer {
+	height: 300px
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+footer h2 {
+	text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+	text-align: center;
+}
+
+#theme-switcher-form {
+    place-content: end;
+}
+
+body[data-theme='light'] {
+	header {
+		background-color: greenyellow;
+		color: black;
+		border: 3px groove black;
+	}
+
+	main {
+		background-color: greenyellow;
+		color: black;
+		border: 3px groove black;
+	}
+
+	#banner {
+		border: 1px solid black;
+	}
+
+	footer {
+		background-color: greenyellow;
+		color: black;
+		border: 3px groove black;
+	}
+}
+
+body[data-theme='dark'] {
+	header {
+		background-color: black;
+		color: greenyellow;
+		border: 3px groove greenyellow;
+	}
+
+	main {
+		background-color: black;
+		color: greenyellow;
+		border: 3px groove greenyellow;
+	}
+
+	#banner {
+		border: 1px solid greenyellow;
+	}
+
+	footer {
+		background-color: black;
+		color: greenyellow;
+		border: 3px groove greenyellow;
+	}
+}
+
+body[data-theme='hawaii'] {
+	header {
+		background-color: turquoise;
+		color: plum;
+		border: 3px groove plum;
+	}
+
+	main {
+		background-color: turquoise;
+		color: plum;
+		border: 3px groove plum;
+	}
+
+	#banner {
+		border: 1px solid plum;
+	}
+
+	footer {
+		background-color: turquoise;
+		color: plum;
+		border: 3px groove plum;
+	}
+}
