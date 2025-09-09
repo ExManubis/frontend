@@ -28,20 +28,20 @@ function prepareObjects(jsonData) {
 			desc: jsonObject.fullname
 				.substring(jsonObject.fullname.indexOf('the'), jsonObject.fullname.lastIndexOf(' '))
 				.slice(4),
-			type: jsonObject.fullname.substring(jsonObject.fullname.lastIndexOf(' ')),
+			type: jsonObject.fullname.substring(jsonObject.fullname.lastIndexOf(' ')).trim(),
 			age: jsonObject.age,
 		});
 	});
 	console.log(allAnimals);
-	displayList();
+	displayList(allAnimals);
 }
 
-function displayList() {
+function displayList(arrayList) {
 	// clear the list
 	document.querySelector('#list tbody').innerHTML = '';
 
 	// build a new list
-	allAnimals.forEach(displayAnimal);
+	arrayList.forEach(displayAnimal);
 }
 
 function displayAnimal(animal) {
@@ -57,3 +57,39 @@ function displayAnimal(animal) {
 	// append clone to list
 	document.querySelector('#list tbody').appendChild(clone);
 }
+
+// FILTER
+function filterAnimals(type) {
+	const filteredAnimals = [];
+	console.log(type);
+	console.log(allAnimals);
+	allAnimals.forEach((animal) => {
+		if (animal.type === type) {
+			console.log(animal);
+			filteredAnimals.push(animal);
+		}
+	});
+	console.log(filteredAnimals);
+	displayList(filteredAnimals);
+}
+
+// RESET
+function clear() {
+	document.querySelector('tbody').innerHTML = '';
+}
+
+// BUTTONS
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+	button.addEventListener('click', () => {
+		console.log(button.value);
+		if (button.value === 'all') {
+			clear();
+			displayList(allAnimals);
+		} else {
+			clear();
+			filterAnimals(button.value);
+		}
+	});
+});
