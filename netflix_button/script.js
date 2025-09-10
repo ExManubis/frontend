@@ -8,7 +8,6 @@ let intervalId;
 
 function fillOverlay() {
 	timer++;
-	console.log(timer);
 	overlay.style.width = `${timer * 0.5}%`;
 	timer >= 200 ? resetOverlay() : null;
 }
