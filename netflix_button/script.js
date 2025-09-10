@@ -10,8 +10,8 @@ let intervalId;
 
 function fillOverlay() {
 	timer++;
-	overlay.style.width = `${timer * (100 / 600)}%`;
-	timer >= 600 ? resetOverlay() : null;
+	overlay.style.width = `${timer * (100 / 600)}%`; // 100% = 10 seconds
+	timer >= 600 ? resetOverlay() : null; // 600 = 10 seconds
 }
 
 function resetOverlay() {
