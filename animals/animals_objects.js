@@ -27,7 +27,7 @@ function prepareObjects(jsonData) {
 			name: jsonObject.fullname.substring(0, jsonObject.fullname.indexOf(' ')),
 			desc: jsonObject.fullname
 				.substring(jsonObject.fullname.indexOf('the'), jsonObject.fullname.lastIndexOf(' '))
-				.slice(4),
+				.slice(4).trim(),
 			type: jsonObject.fullname.substring(jsonObject.fullname.lastIndexOf(' ')).trim(),
 			age: jsonObject.age,
 		});
