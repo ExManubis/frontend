@@ -21,10 +21,8 @@ function loadJSON() {
 
 function prepareObjects(jsonData) {
 	jsonData.forEach((jsonObject) => {
-		// TODO: Create new object with cleaned data - and store that in the allAnimals array
-		// TODO: MISSING CODE HERE !!!
 		allAnimals.push({
-			name: jsonObject.fullname.substring(0, jsonObject.fullname.indexOf(' ')),
+			name: jsonObject.fullname.substring(0, jsonObject.fullname.indexOf(' ')).trim(),
 			desc: jsonObject.fullname
 				.substring(jsonObject.fullname.indexOf('the'), jsonObject.fullname.lastIndexOf(' '))
 				.slice(4)
@@ -33,7 +31,6 @@ function prepareObjects(jsonData) {
 			age: jsonObject.age,
 		});
 	});
-	console.log(allAnimals);
 	displayList(allAnimals);
 }
 
