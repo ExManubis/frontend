@@ -75,17 +75,23 @@ function clear() {
 	document.querySelector('tbody').innerHTML = '';
 }
 
+// SHOW FILTERED
+function showFiltered(type) {
+	clear();
+	filterAnimals(type);
+}
+
+// SHOW ALL
+function showAll() {
+	clear();
+	displayList(allAnimals);
+}
+
 // BUTTONS
 const buttons = document.querySelectorAll('button');
 
 buttons.forEach((button) => {
 	button.addEventListener('click', () => {
-		if (button.value === 'all') {
-			clear();
-			displayList(allAnimals);
-		} else {
-			clear();
-			filterAnimals(button.value);
-		}
+		button.value === 'all' ? showAll() : showFiltered(button.value);
 	});
 });
