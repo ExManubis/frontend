@@ -19,6 +19,14 @@ function resetOverlay() {
 	body.classList.add('active');
 	clearInterval(intervalId);
 	intervalId = null;
+	button.classList.add('hidden');
+	setTimeout(animationEnd, 3500);
+}
+
+function animationEnd() {
+	body.classList.remove('active');
+	body.style.backgroundImage = 'none';
+	body.style.backgroundColor = 'black';
 }
 
 function interval() {
