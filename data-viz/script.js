@@ -5,7 +5,7 @@ function getData() {
 		.then((response) => response.json())
 		.then((data) => {
 			console.log(data);
-			dataViz.innerHTML = `<h2>${data.inQueue} people in queue</h2>`;
+			dataViz.innerHTML = `<h2 id="data-viz-title">${data.inQueue} people in queue</h2>`;
 		});
 }
 
