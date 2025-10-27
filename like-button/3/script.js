@@ -1,9 +1,15 @@
-const buttons = document.querySelectorAll('.like-button');
+const buttons = document.querySelectorAll('.fa-thumbs-up');
+
+document.addEventListener('DOMContentLoaded', () => {
+	buttons.forEach((button) => {
+		button.parentNode.dataset.clicks = '0';
+	});
+});
 
 buttons.forEach((button) => {
-	button.addEventListener('click', (e) => {
-		e.target.dataset.clicks++;
-		clicks = e.target.dataset.clicks;
-		e.target.innerHTML = `🔥 ${clicks > 1 ? 'Likes' : 'Like'} ${clicks}`;
+	button.parentNode.addEventListener('click', (e) => {
+		e.currentTarget.dataset.clicks++;
+		clicks = e.currentTarget.dataset.clicks;
+		e.currentTarget.innerHTML = `🔥 ${clicks > 1 ? 'Likes' : 'Like'} ${clicks}`;
 	});
 });
